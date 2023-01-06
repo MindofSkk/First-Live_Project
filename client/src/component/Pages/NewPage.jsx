@@ -86,6 +86,18 @@ export const NewPage = () => {
             विशाल भंडारा शाम 4 बजे से
           </Heading>
         </Heading>
+        <Button
+              colorScheme="tomato"
+              bg="orangered"
+              color="white"
+              variant="outline"
+              type="submit"
+              display={"block"}
+              margin="auto"
+              onClick={re}
+            >
+             Register | SignUp
+            </Button>
         <br />
         <Heading size="sm" >
           {" "}

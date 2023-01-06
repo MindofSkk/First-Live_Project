@@ -70,7 +70,7 @@ const Data = () => {
     dispatch(getdataAPI(filter));
   }, [filter]);
   return (
-    <div>
+    <div style={{backgroundColor:"white"}}>
       {/* <Admin /> */}
       <Text
         fontSize={"40px"}
@@ -106,6 +106,8 @@ const Data = () => {
           <option value="male">Male</option>
           <option value="Female">Female</option>
         </Select>
+
+        <h1>Total : {data.length}</h1>
         {/* <-----------filter by country------------> */}
         {/* <Select
           placeholder="filter by country"
@@ -157,6 +159,9 @@ const Data = () => {
         ))}
          </Table>
         </TableContainer>
+
+      
+        <br /><br /><br />
     </div>
   );
 };

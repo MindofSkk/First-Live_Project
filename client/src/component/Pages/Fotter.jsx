@@ -3,9 +3,10 @@ import {
     Container,
     Stack,
     Text,
-    Link,
+  
     useColorModeValue,
   } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
   
   export  const Fotter=() =>{
     return (
@@ -21,12 +22,12 @@ import {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Stack direction={'row'} spacing={6}>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Blog</Link>
+            <Link to='/'>Home</Link>
+            <Link to="/login">Admin</Link>
+            <Link to='/form'>Registration</Link>
             <Link href={'#'}>Contact</Link>
           </Stack>
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+          <Text>© 2023 Design By Sachin Kumar Keshri & Kundan Kumar Keshri . All rights reserved</Text>
         </Container>
       </Box>
     );

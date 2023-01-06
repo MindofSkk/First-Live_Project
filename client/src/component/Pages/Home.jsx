@@ -10,16 +10,23 @@ import {
   Select,
   Stack,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
+
 export const Home = () => {
+  const toast = useToast()
   const navigate = useNavigate();
+ 
   const [data, setData] = useState({});
   const [gender, setGender] = useState("");
+ 
 
   const handlechange = (e) => {
+    
     const { name, value } = e.target;
+    
     setData({
       ...data,
       [name]: value,
@@ -48,7 +55,16 @@ export const Home = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        alert("successfully registered");
+        toast({
+          position: 'top',
+          title: 'Registeration sucessfull.',
+          description: "Thank you  for participating.",
+          status: 'success',
+          duration: 5000,
+          isClosable: true,
+        })
+        navigate("/")
+
       })
       .catch((err) => {
         console.log(err);
@@ -77,7 +93,7 @@ export const Home = () => {
         margin="auto"
         border="1px solid orangered"
         padding={"15px"}
-        // bg=""
+        bg="white"
       >
         <form onSubmit={handlesubmit}>
           <FormControl>
@@ -194,9 +210,7 @@ export const Home = () => {
         </form>
       </Box>
 
-      <Box>
-        <h1> </h1>
-      </Box>
+     <br />
     </div>
   );
 };

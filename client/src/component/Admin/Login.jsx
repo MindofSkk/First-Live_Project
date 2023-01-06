@@ -36,7 +36,7 @@ const Login = () => {
     }
   }, [token, navigate]);
   return (
-    <div>
+    <div style={{backgroundColor:"white"}}>
       {/* <Admin /> */}
       <Text
         fontSize={"40px"}
@@ -77,6 +77,15 @@ const Login = () => {
           <br />
         </form>
       </Box>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <br/>
+      <br/>
+      <br/>
     </div>
   );
 };
