@@ -27,7 +27,7 @@ import { Link } from 'react-router-dom';
             <Link to='/form'>Registration</Link>
             <Link href={'#'}>Contact</Link>
           </Stack>
-          <Text>© 2023 Design By Sachin Kumar Keshri & Kundan Kumar Keshri . All rights reserved</Text>
+          <Text>© 2023 Design By <a href="https://www.linkedin.com/in/mindofskk/"  style={{color:"yellow"}}> <u>Sachin Kumar Keshri </u></a>  & <a href='https://www.linkedin.com/in/kundan-kumar-keshri-04621b238' style={{color:"yellow"}}> <u>Kundan Kumar Keshri</u></a> . All rights reserved</Text>
         </Container>
       </Box>
     );

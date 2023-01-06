@@ -44,7 +44,7 @@ export const NewPage = () => {
             </Heading>
             <br />
 
-            <Heading size="sm">
+            <Heading size="md">
               {" "}
               श्री सुंदरकांड पाठ के पाठक के रूप में जुड़ने के लिए पंजीकरण करें
             </Heading>
@@ -86,6 +86,15 @@ export const NewPage = () => {
             विशाल भंडारा शाम 4 बजे से
           </Heading>
         </Heading>
+
+        <br />
+        <Heading size="md" >
+          {" "}
+          <u style={{color:"orange"}}> कार्यक्रम स्थल। :</u> <br /> <br />
+          राधा कृष्ण मंदिर, पिस्का नगरी। <br /> 
+         
+        </Heading>
+         <br />
         <Button
               colorScheme="tomato"
               bg="orangered"
@@ -96,7 +105,8 @@ export const NewPage = () => {
               margin="auto"
               onClick={re}
             >
-             Register | SignUp
+           Register | SignUp
+             
             </Button>
         <br />
         <Heading size="sm" >
