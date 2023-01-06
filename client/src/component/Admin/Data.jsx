@@ -54,7 +54,7 @@ const Data = () => {
     // console.log(id)
 
     axios
-      .delete(`https://json-masai-ser-production.up.railway.app/posts/${id}`)
+      .delete(`https://json-user-data.up.railway.app/users/${id}`)
       .then(() => dispatch(getdataAPI(filter)))
       .then(()=>toast({
         position: 'top',
@@ -104,7 +104,7 @@ const Data = () => {
           onChange={handlefilter}
         >
           <option value="male">Male</option>
-          <option value="Female">Female</option>
+          <option value="female">Female</option>
         </Select>
 
         <h1>Total : {data.length}</h1>

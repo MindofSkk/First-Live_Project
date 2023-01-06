@@ -44,7 +44,7 @@ export const NewPage = () => {
             </Heading>
             <br />
 
-            <Heading size="md">
+            <Heading size="sm">
               {" "}
               श्री सुंदरकांड पाठ के पाठक के रूप में जुड़ने के लिए पंजीकरण करें
             </Heading>

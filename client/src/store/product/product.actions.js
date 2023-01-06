@@ -10,7 +10,7 @@ export const getdataAPI = (state) => (dispatch) => {
   //console.log("state",state)
   dispatch({ type: GET_ROOM_LOADING });
   return axios
-    .get(`https://json-masai-ser-production.up.railway.app/posts?q=${state}`)
+    .get(`https://json-user-data.up.railway.app/users?q=${state}`)
     .then((res) => {
       //console.log(res);
       return dispatch({ type: GET_ROOM_SUCCESS, payload: res.data });
@@ -23,7 +23,7 @@ export const getdataAPI = (state) => (dispatch) => {
 // post data
 export const addDataAPI = (adddata) => (dispatch) => {
   return axios
-    .post("https://json-masai-ser-production.up.railway.app/posts", adddata)
+    .post("https://json-user-data.up.railway.app/users", adddata)
     .then((res) => {
     })
     .catch((err) => {

@@ -45,7 +45,7 @@ export const Home = () => {
       Address: data.Address,
     };
     console.log(cred);
-    fetch("https://json-masai-ser-production.up.railway.app/posts", {
+    fetch("https://json-user-data.up.railway.app/users", {
       method: "POST",
       body: JSON.stringify(cred),
 
