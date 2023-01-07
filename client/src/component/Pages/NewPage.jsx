@@ -91,7 +91,7 @@ export const NewPage = () => {
         <Heading size="md" >
           {" "}
           <u style={{color:"orange"}}> कार्यक्रम स्थल। :</u> <br /> <br />
-          राधा कृष्ण मंदिर, पिस्का नगरी। <br /> 
+          राधा कृष्ण मंदिर, पिस्का नगड़ी। <br /> 
          
         </Heading>
          <br />
